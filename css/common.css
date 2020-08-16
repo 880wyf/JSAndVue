@@ -1,0 +1,18 @@
+/* 通用的样式 */
+
+/* 初始化样式 */
+* {
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    width: 1230px;
+    height: 100%;
+    margin:0 auto;
+}

@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1597579893191'); /* IE9 */
+  src: url('iconfont.eot?t=1597579893191#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPYAAsAAAAACCQAAAOLAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDWIMbATYCJAMQCwoABCAFhG0HTRsSB8ieB7atYn0SnTLl/ovO5//d9L5YH6EuqYjMRGlIKRJOCBOlm8NU9EtcPu1rNEDAxFwC2/1qF1MEUTdIIDBKqvz//7mcXmsIzA+U21jbxqSthwUWb+sFNPYCDagsDEhbhte6FA56NRCAKFkBMtt37QuKQzoRADkWZRRoRo9riCcoQqgYmYQsAo+2ucxNAAuDz5OPsijA4DtIz567XS1aPnweyXr8Hgz1EAimswKQxwEsoADAAalK+2hsFCzAEs36nCoARTEwVVmPzyP9sfAockrlGPrHY4AMkNhAAFABIRY+g/MTRQ/QgoBiJMSAAeCDjKCAYMByAIdA6Ik4Ag73vVBKDWFhRdwIIxH7hZDggcFtJgZ6z8UKq89nBu28SAIaLtiCfFFcIN8wPtBLSBCWjfac910s+0nvOZPv+O71nnW7jnlP7NnQsHHvyVG52Ub4tq9eFdl33SkxuF+ID55dWcHePeV9ovs/7i96d6xZQxr2ZhqbLVFxy1lSkt3Rzz51akuiu9jCzTAi6o2SjfgRn2bIMKQt+rEpLT5DqclX/RD4tH9pQkpECdQVbvy7wVda4sIqwsp5H3StiMJV77Pfry7KSV4dpKxKukAimq1+V6A2z36Bd6uTLrZL/P+YNur66unUpPigIUJpXmTzQ3GRRwq2FBX/D1dip3QL6X69gxh1ZqQSNe9ebsuY5Gb9Vwz2kPRT0YATWYu9zCXAf4ltyY708+9mf7Ft/2grlH2vMiKk6W9qfCLPixFt3AGvWxQHdgG/RdBZ8P8qJecHnCIiBi4NAed1kJcy9PWDujEAkQjwI3e411M4oyCxElQRADACJAGLysBwhALgGVWAgGoBonwdxhtF0LBIGgDkmYmACHUQGMEuAivULQxHeAW8aL9AEBoLov4RMaNRVhaxjSaP0uVaafR4yWJSHWZm0sUwvresuG2jtLQoYPSXNZfFI5UWleQjHWSHrE3RxzVGKdN1s2TWVLvUHq0n22yq5NTUetmkF9XpurNxcbG56klFJtUOURsa2Sg6WS3JaONJLExUDmYvu04svL83mcLNZhStAdXk7k+mcbFULylVpKQDpoPc0Ql1K+e4jKEoo9OZScw0KjtJe2SV2WhQJXFWN6snM9EVqRvgd2qsGKczd5UXLa+0v+EcABFpxAVDWMIRHoZrP6xQl106ddWp7npLZUWgorrHuk11slV1KAAA') format('woff2'),
+  url('iconfont.woff?t=1597579893191') format('woff'),
+  url('iconfont.ttf?t=1597579893191') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1597579893191#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-test:before {
+  content: "\e64f";
+}
+
+.icon-shouji54:before {
+  content: "\e660";
+}
+
+.icon-gouwuchekong:before {
+  content: "\e600";
+}
+
