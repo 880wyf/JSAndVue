@@ -21,15 +21,13 @@
                 <ul class="quick-menu">
                     <li class="sn-mytaobao triangle">
                         <div class="sn-menu">
-                            <a class="menu-hd" href="#">
+                            <a class="menu-hd menu-td" href="#">
                                 我的淘宝
                             </a>
-                            <!-- <div class="menu-bd">
-                                <div class="menu-bd-panel">
-                                    <a href="#">已买到的宝贝</a>
-                                    <a href="#">已卖出的宝贝</a>
-                                </div>
-                            </div> -->
+                            <ul class="menu-bd">
+                                <li class="menu-bd-panel"><a href="#">已买到的宝贝</a></li>
+                                <li class="menu-bd-panel"><a href="#">已卖出的宝贝</a></li>
+                            </ul>
                         </div>                        
                     </li>
                     <li class="sn-cart">
@@ -38,9 +36,13 @@
                     </li>
                     <li class="sn-favorite triangle"><!-- favorite 收藏 triangle 三角 -->
                         <div class="sn-menu">
-                            <a class="menu-hd" href="#">
+                            <a class="menu-hd menu-td" href="#">
                                 收藏夹
                             </a>
+                            <ul class="menu-bd">
+                                <li class="menu-bd-panel"><a href="#">收藏的宝贝</a></li>
+                                <li class="menu-bd-panel"><a href="#">收藏的店铺</a></li>
+                            </ul>
                         </div>
                         
                     </li>
@@ -48,33 +50,325 @@
                     <li class="sn-mobile">
                         <span class="iconfont icon-shouji54"></span>
                         <a href="#">手机版</a>
+						<div class="qr-code"></div>
                     </li>
                     <li class="sn-home">
                         <a href="#">淘宝网</a>
                     </li>
                     <li class="sn-seller triangle">
                         <div class="sn-menu">
-                            <a class="menu-hd" href="#">
+                            <a class="menu-hd menu-td" href="#">
                                 商家支持
                             </a>
+							<div class="merchant-menu">
+									<p>商家：</p>
+									<ul class="hd-list">
+										<li><a href="#">商家中心</a></li>
+										<li><a href="#">天猫规则</a></li>
+										<li><a href="#">商家入驻</a></li>
+										<li><a href="#">运营服务</a></li>
+										<li><a href="#">商家品控</a></li>
+										<li><a href="#">商家工具</a></li>
+										<li><a href="#">天猫智库</a></li>
+										<li><a href="#">喵言喵语</a></li>
+									</ul>
+									<div class="merchant-hd "></div>
+								
+									<p>帮助：</p>
+									<ul class="bd-list">
+										<li><a href="#">帮助中心</a></li>
+										<li><a href="#">问商友</a></li>
+									</ul>
+								<div class="merchant-hd"></div>
+							</div>
                         </div>
                         
                     </li>
-                    <li class="sn-sitemap triangle">
-                        
+                    <li class="sn-sitemap triangle" >
                         <div class="sn-menu">
                             <span class="iconfont icon-icon-test"></span>
-                            <a class="menu-hd" href="#">
+                            <a class="menu-hd" id="sitemap" href="#">
                                 网站导航
                                 <b></b>
                             </a>
-
+							<div class="navigtion-menu">
+								<div class="nav-hot">
+									<h2>
+										热点推荐
+										<span>Hot</span>
+									</h2>
+									<ul>
+										<li><a href="#">天猫超市</a></li>
+										<li><a href="#">喵鲜生</a></li>
+										<li>
+											<a href="#">
+												科技新品
+												<span class="iconfont icon-xin"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												女装新品
+												<span class="iconfont icon-huo"></span>
+											</a>
+										</li>
+										<li><a href="#">酷玩街</a></li>
+										<li>
+											<a href="#">
+												内衣新品
+												<span class="iconfont icon-huo"></span>
+											</a>
+										</li>
+										<li><a href="#">试美妆</a></li>
+										<li><a href="#">运动新品</a></li>
+										<li>
+											<a href="#">
+												时尚先生
+												<span class="iconfont icon-huo"></span>
+											</a>
+										</li>
+										<li><a href="#">精明妈咪</a></li>
+										<li>
+											<a href="#">
+												吃乐会
+												<span class="iconfont icon-xin"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">企业采购</a>
+										</li>
+										<li><a href="#">会员积分</a></li>
+										<li><a href="#">天猫国际</a></li>
+										<li><a href="#">品质频道</a></li>
+									</ul>
+								</div>
+								<div class="nav-market">
+									<h2>
+										行业市场
+										<span>Market</span>
+									</h2>
+									<ul>
+										<li><a href="#">美妆</a></li>
+										<li><a href="#">电器</a></li>
+										<li>
+											<a href="#">
+												女装
+												<span class="iconfont icon-huo"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												男装
+												<span class="iconfont icon-huo"></span>
+											</a>
+										</li>
+										<li><a href="#">女鞋</a></li>
+										<li>
+											<a href="#">男鞋</a>
+										</li>
+										<li>
+											<a href="#">
+												内衣
+												<span class="iconfont icon-huo"></span>
+											</a>
+										</li>
+										<li><a href="#">箱包</a></li>
+										<li>
+											<a href="#">运动</a>
+										</li>
+										<li><a href="#">母婴</a></li>
+										<li>
+											<a href="#">家装</a>
+										</li>
+										<li>
+											<a href="#">医药</a>
+										</li>
+										<li><a href="#">食品</a></li>
+										<li>
+											<a href="#">
+												配饰
+												<span class="iconfont icon-xin"></span>
+											</a>
+										</li>
+										<li><a href="#">汽车</a></li>
+									</ul>
+								</div>
+								<div class="nav-help">
+									<h2>
+										服务指南
+										<span>Help</span>
+									</h2>
+									<ul>
+										<li>
+											<a href="#">帮助中心</a>
+										</li>
+										<li>
+											<a href="#">品质保障</a>
+										</li>
+										<li>
+											<a href="#">特色服务</a>
+										</li>
+										<li>
+											<a href="#">7天退换货</a>
+										</li>
+									</ul>
+								</div>
+							</div>
                         </div>
                         
                     </li>
                 </ul>
             </div>           
         </div>
-    </body>
+    
+		<div id="search">			
+			<div class="wrapper">
+				<div class="logo-info">
+					<a href="#"><img src="./img/Tmall-logo.gif" alt="image error" title="Tmall"></a>
+				</div>
+				<dir class="search-brace"></dir>				
+				<div class="search-mall">
+					<form action="">
+						<label for="search-box"></label>
+						<input type="text" name="search-box" class="search-box">
+						<button class="search-btn">搜索</button>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+
+		<div id="mail-nav">			
+			<div class="wrapper">
+				<div class="mail-list">
+					<a href="#">
+						<img src="./img/Tmall-supermarket.png" alt="" title="">
+					</a>
+					<a href="#">
+						<img src="./img/Tmall-international.png" alt="" title="">
+					</a>
+					<a href="#">天猫会员</a>
+					<a href="#">电器城</a>
+					<a href="#">喵鲜生</a>
+					<a href="#">医药馆</a>
+					<a href="#">营业厅</a>
+					<a href="#">魅力惠</a>
+					<a href="#">飞猪旅行</a>
+					<a href="#">苏宁易购</a>
+				</div>
+			</div>			
+		</div>
+
+		<div id="banner">
+			<div class="wrapper">
+				<div class="mail-commodity">
+					<span class="iconfont icon-caidan"></span>
+					<i>商品分类</i>
+					<ul class="normal-nav">
+						<li class="">
+							<a href="#">
+								<span class="iconfont icon-nvzhuang"></span>
+								女装 /内衣
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-nanzhuang"></span>
+								男装 /运动户外
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-xiezi"></span>
+								女鞋 /男鞋 /箱包
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-meizhuang
+								"></span>
+								美妆 /个人护理
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-zuanshi
+								"></span>
+								腕表 /眼睛 /珠宝饰品
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-shouji"></span>
+								手机 /数码 /电脑办公
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-muyingwanju"></span>
+								母婴玩具
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-lingshi"></span>
+								零食 /茶酒 /进口食品
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-02f"></span>
+								生鲜水果
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-jiadian"></span>
+								大家电 /生活电器
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-jiancai"></span>
+								家居建材
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-cheqiche"></span>
+								汽车 /配件 /用品
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-jiafang"></span>
+								家纺 /家饰 /鲜花
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-medicine"></span>
+								医药保健
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-chuju"></span>
+								厨具 /收纳 /宠物
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="iconfont icon-tushuyinxiang"></span>
+								图书音像
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
 </html>
 <!-- <i class="mui-global-iconfont">&#xe601;</i> -->
+<!-- <img class="doodle hide j_doodle" src="https://img.alicdn.com/tfs/TB1dc5NglFR4u4jSZFPXXanzFXa-290-130.gif" > -->

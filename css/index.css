@@ -6,6 +6,7 @@
     background-color: #f2f2f2;
     font-size:12px;
     line-height: 32px;
+    border-bottom:1px solid #e5e5e5;
 }
 .login-info{
     float: left;    
@@ -22,22 +23,27 @@
 #header a:hover{
     color:#ff0036;
 }
+
+
 .sn-login{
     padding:0 10px 0 20px;
 }
 .sn-register{
     padding: 0 10px;
 }
-
+/* li的左右内边距 */
 .sn-mytaobao,.sn-cart,.sn-favorite,
 .sn-mobile,.sn-home,.sn-seller,.sn-sitemap{
     padding: 0 10px;
 }
+/* 给有三角形图标的 li 元素开启相对定位 */
 .sn-mytaobao ,.sn-favorite,
 .sn-seller,.sn-sitemap{
+    height: 33px;
     position: relative;
 }
-.quick-menu .triangle:after {
+/* 用伪类选择器 设置三角形图标 */
+.quick-menu .triangle::after {
     content: "";
     position: absolute;
     top:50%;
@@ -48,8 +54,57 @@
     border-width:3px;
     border-style: solid;
     border-color:#bbb transparent transparent transparent;
+    transition: none; /* 鼠标离开 取消过渡（动画） */
+    transform-origin: 3px 1.5px; /* 设置旋转的点 */
+}
+/* 当鼠标进入 有三角形图标的 li 元素，三角形旋转与过度 */
+.quick-menu .triangle:hover::after{
+    transform: rotate(180deg); /* 设置旋转角度 */
+    transition: all .2s linear; /* 设置过渡（动画） */
+}
+/* 设置有三角形图标的 li 元素的 左右边框 */
+.quick-menu .triangle{
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 1px 0 1px;
+}
+/* 当鼠标进入 三角图标 li 元素 ，左右边框显示 */
+.quick-menu .triangle:hover{
+    background-color: white;
+    border-color: #e5e5e5;
+	cursor: pointer;
+}
+/* 鼠标进入三角图标 li 元素，显示二级下拉菜单 */
+.quick-menu .menu-bd {
+    position: absolute;
+    left: -1px;
+    top: 32px;
+    background-color: white;
+    border: solid 1px #e5e5e5;
+    border-top: none;
+    padding:8px 10px;
+    display: none;
+}
+.quick-menu .menu-bd .menu-bd-panel {
+    width: 72px;
+    line-height: 20px;
+    height: 20px;
+}
+.quick-menu .triangle:hover  .menu-bd {
+    display: block;
+}
+/* 设置三角图标 li 元素内鼠标经过 a 元素时显示的下划线 */
+#header .triangle:hover  .menu-hd {
+    color: #ff0036;
+}
+#header .sn-sitemap:hover .menu-hd{
+	color: #999;
+}
+.triangle a:hover{
+    text-decoration: underline;
 }
 
+/* 设置小图标 */
 .sn-cart .icon-gouwuchekong , 
 .sn-mobile .icon-shouji54 ,
 .sn-sitemap .icon-icon-test{
@@ -57,6 +112,7 @@
     font-weight: bold;
     color: #d81e06;
 }
+/* 收藏夹右边竖线 */
 .sn-separator{
     display: block;
     width:0;
@@ -67,4 +123,286 @@
     padding:0;
 }
 
+/* 二维码样式 */
+.sn-mobile{
+	position:relative;
+}
+.sn-mobile .qr-code {
+	width: 175px;
+	height: 227px;
+	background: #fff;
+	position: absolute;
+	left: -45px;
+	top: 26px;
+	box-shadow: 0 0 5px #aaa;
+	display: none;
+}
+.sn-mobile .qr-code::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px;
+	border-color: transparent transparent #fff transparent;	
+	position: absolute;
+	top: -10px;
+	left:50%;
+	margin-left:-5px;
+}
+.sn-mobile:hover .qr-code{
+	display: block;
+}
+
+/* 商家支持样式 */
+.merchant-menu {
+	width: 142px;
+	padding-top:8px;
+	background: #fff;
+	position: absolute;
+	right: -1px;
+	top: 32px;
+	border:solid #eee;
+	border-width: 0 1px 1px 1px;
+	display: none;
+}
+.merchant-menu .hd-list , .merchant-menu .bd-list {
+	width: 142px;
+	clear: both;
+	overflow: hidden;
+}
+.merchant-menu .hd-list li ,.merchant-menu .bd-list li{
+	float: left;
+	line-height: 15px;
+	height: 15px;
+	/* padding-bottom:8px; */
+	padding:0 10px 8px 10px;
+}
+.merchant-menu p{
+	font-weight: bold;
+	line-height: 15px;
+	height: 15px;
+	padding:0 10px 5px 10px;
+}
+.merchant-hd {
+	width: 122px;
+	/* overflow: hidden; */
+	border-bottom: 1px dotted #ccc;
+	margin-left: 10px;
+	margin-bottom:8px ;
+}
+.triangle:hover .merchant-menu {
+	display: block;
+}
+
+/* 网站导航样式 */
+.navigtion-menu {
+	width: 1198px;
+	padding: 25px 0;
+	background: white;
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+	border-color: #eee;
+	position: absolute;
+	right: -1px;
+	top: 32px;
+	display: none;
+}
+.nav-hot , .nav-market  {
+	width: 455px;
+	height: 110px;
+	float: left;
+	padding-left: 30px;
+	border-color:#dedede;
+	border-style: dotted;
+	border-width:0 1px 0 0;
+}
+.nav-help {
+	width: 196px;
+	height: 110px;
+	float: left;
+	padding-left: 30px;
+}
+.nav-hot h2,.nav-market h2,.nav-help h2 {
+	padding-bottom:8px;
+	height: 22px;
+	line-height: 22px;
+	font-weight: 400;
+	font-size: 16px;
+}
+.nav-hot h2 {
+	color: #f56a00;
+}
+.nav-market h2 {
+	color:#2263d4;
+}
+.nav-help h2 {
+	color:#666;
+}
+.nav-hot ul ,.nav-market ul {
+	float: left;
+	width: 475px;
+}
+.nav-help ul {
+	float: left;
+	width: 216px;
+}
+.nav-hot li ,.nav-market li , .nav-help li {
+	width: 95px;
+	height: 28px;
+	float: left;
+}
+#header .nav-hot li a:hover{
+	color: #F56A00;
+}
+#header .nav-market li a:hover{
+	color: #2263d4;
+}
+#header .nav-help li a:hover{
+	color: #666;
+}
+.navigtion-menu ul li a {
+	position: relative;
+}
+.navigtion-menu .icon-xin,.navigtion-menu .icon-huo {
+	width: 9px;
+	height: 11px;
+	position: absolute;
+	top: -17px;
+	right: -9px;
+	font-size:14px;	
+}
+.navigtion-menu .icon-xin {
+	color: #0f0;
+}
+.navigtion-menu .icon-huo {
+	color: #F56A00;
+}
+#header .sn-sitemap .menu-hd:hover {
+	color: #999;
+	text-decoration: none;
+}
+.sn-sitemap:hover .navigtion-menu {
+	display: block;
+}
 /* header样式--结束 */
+
+/* search样式--开始 */
+#search .logo-info {
+	float: left;
+	width: 290px;
+	height: 130px;
+	margin-left: -45px;
+}
+#search .search-brace {
+	height: 38px;
+}
+#search .search-mall {
+	width: 621px;
+	margin-left: 300px;
+	border: 2px solid #ff0036;
+	overflow: hidden;
+}
+#search .search-mall .search-box {
+	width: 483px;
+	height: 26px;
+	padding: 5px 3px 5px 5px;
+	border: none;
+	outline: none;
+	float: left;
+}
+#search .search-mall .search-btn {
+	width: 130px;
+	height: 36px;
+	background: #ff0036;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	border: none;
+	float: left;
+}
+/* search样式--结束 */
+
+/* mail-nav样式-开始 */
+#mail-nav {
+	margin-top:52px;
+	height: 35px;
+	clear: both;
+}
+#mail-nav .mail-list {
+	width: 1030px;
+	height: 35px;
+	line-height: 35px;
+	margin-left:200px;
+	float: left;
+}
+#mail-nav .mail-list a img {
+	width: 100px;
+	height: 35px;
+	vertical-align: middle;
+}
+#mail-nav .mail-list a {
+	display: inline-block;
+	padding:0 7px;
+	font-size: 16px;
+	line-height: 35px;
+	height: 35px;
+	color: #333333;
+}
+#mail-nav .mail-list a:hover {
+	color: #ff0036;
+}
+/* mail-nav样式-结束 */
+
+/* banner样式-开始 */
+#banner {
+	border-top:2px solid #ff0036;
+}
+#banner .mail-commodity {
+	width: 200px;
+	height: 36px;
+	line-height: 36px;
+	background: #ff0036;		
+	margin-top: -36px;
+	float: left;
+}
+#banner .mail-commodity .icon-caidan {
+	color: #fff;
+	margin-left: 14px;
+	font-weight: 400;
+}
+#banner .mail-commodity i {
+	display:inline-block;
+	color: #fff;
+	font-size: 16px;	
+	font-weight: 700;
+	margin-left: 8px;
+	font-style: normal;
+}
+#banner .mail-commodity .normal-nav {
+	width: 200px;
+	height: 500px;
+	background: rgba(0,0,0,.55);
+	/* opacity: .5; */
+}
+#banner .normal-nav li {
+	height: 31.2px;
+    line-height: 31.2px;
+}
+#banner .normal-nav li a {
+	display: inline-block;
+	height: 31.2px;
+    line-height: 31.2px;
+    color: #fff;
+    font-size: 14px;
+}
+#banner .normal-nav span{
+	display: inline-block;
+    opacity: .5;
+	margin-left: 14px;
+    margin-right: 4px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 16px;
+}
+/* banner样式-结束 */
