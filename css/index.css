@@ -78,7 +78,8 @@
 .quick-menu .menu-bd {
     position: absolute;
     left: -1px;
-    top: 32px;
+	top: 32px;
+	z-index: 1;
     background-color: white;
     border: solid 1px #e5e5e5;
     border-top: none;
@@ -124,20 +125,30 @@
 }
 
 /* 二维码样式 */
-.sn-mobile{
+#header .quick-menu .sn-mobile{
 	position:relative;
 }
-.sn-mobile .qr-code {
+#header .quick-menu .sn-mobile .qr-code {
 	width: 175px;
 	height: 227px;
 	background: #fff;
 	position: absolute;
 	left: -45px;
 	top: 26px;
+	z-index: 1;
 	box-shadow: 0 0 5px #aaa;
 	display: none;
 }
-.sn-mobile .qr-code::after {
+#header .sn-mobile .qr-code .img-top {
+	margin-top:5px;
+}
+#header .sn-mobile .qr-code .img-bottom {
+	position: absolute;
+	left: 50%;
+	bottom: 9px;
+	margin-left: -75px;
+}
+#header .sn-mobile .qr-code::after {
 	content: "";
 	width: 0;
 	height: 0;
@@ -149,7 +160,7 @@
 	left:50%;
 	margin-left:-5px;
 }
-.sn-mobile:hover .qr-code{
+#header .sn-mobile:hover .qr-code{
 	display: block;
 }
 
@@ -205,6 +216,7 @@
 	position: absolute;
 	right: -1px;
 	top: 32px;
+	z-index: 11;
 	display: none;
 }
 .nav-hot , .nav-market  {
@@ -287,12 +299,14 @@
 /* header样式--结束 */
 
 /* search样式--开始 */
+/* logo样式 */
 #search .logo-info {
 	float: left;
 	width: 290px;
 	height: 130px;
 	margin-left: -45px;
 }
+/* 搜索框样式 */
 #search .search-brace {
 	height: 38px;
 }
@@ -301,6 +315,21 @@
 	margin-left: 300px;
 	border: 2px solid #ff0036;
 	overflow: hidden;
+	position: relative;
+}
+#search .search-mall label {
+	max-width: 90%;
+    overflow: hidden;
+	white-space: nowrap;
+	font-size: 14px;
+    line-height: 36px;
+	height: 36px;
+	color: rgb(102, 102, 102);
+	visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	z-index: 0;
 }
 #search .search-mall .search-box {
 	width: 483px;
@@ -310,6 +339,7 @@
 	outline: none;
 	float: left;
 }
+/* 搜索框按钮样式 */
 #search .search-mall .search-btn {
 	width: 130px;
 	height: 36px;
@@ -324,6 +354,7 @@
 /* search样式--结束 */
 
 /* mail-nav样式-开始 */
+/* 主要导航栏样式 */
 #mail-nav {
 	margin-top:52px;
 	height: 35px;
@@ -358,6 +389,7 @@
 #banner {
 	border-top:2px solid #ff0036;
 }
+/* 轮播图 侧导航样式 */
 #banner .mail-commodity {
 	width: 200px;
 	height: 36px;
@@ -365,6 +397,8 @@
 	background: #ff0036;		
 	margin-top: -36px;
 	float: left;
+	position: relative;
+	z-index: 2;
 }
 #banner .mail-commodity .icon-caidan {
 	color: #fff;
@@ -383,7 +417,6 @@
 	width: 200px;
 	height: 500px;
 	background: rgba(0,0,0,.55);
-	/* opacity: .5; */
 }
 #banner .normal-nav li {
 	height: 31.2px;
@@ -394,7 +427,8 @@
 	height: 31.2px;
     line-height: 31.2px;
     color: #fff;
-    font-size: 14px;
+	font-size: 14px;
+	font-weight: bold;
 }
 #banner .normal-nav span{
 	display: inline-block;
@@ -405,4 +439,799 @@
     line-height: 31px;
     font-size: 16px;
 }
+#banner .normal-nav li:hover{
+	background: #ffffff;
+}
+#banner .normal-nav li:hover a span {
+	opacity: 1;
+}
+#banner .normal-nav li:hover .nvzhuang{
+	color: #ff0036;
+}
+#banner .normal-nav li:hover .nanzhuang {
+	color: #427def;
+}
+#banner .normal-nav li:hover .xiezi{
+	color: #6347ed;
+}
+#banner .normal-nav li:hover .meizhuang{
+	color: #e54077;
+}
+#banner .normal-nav li:hover .zuanshi{
+	color: #6347ed;
+}
+#banner .normal-nav li:hover .shouji{
+	color: #427def;
+}
+#banner .normal-nav li:hover .muyingwanju{
+	color: #fa5c5c;
+}
+#banner .normal-nav li:hover .lingshi{
+	color: #f7a831;
+}
+#banner .normal-nav li:hover .f02f{
+	color: #f7a831;
+}
+#banner .normal-nav li:hover .jiadian{
+	color: #427def;
+}
+#banner .normal-nav li:hover .jiancai{
+	color: #dd2727;
+}
+#banner .normal-nav li:hover .cheqiche{
+	color: #427def;
+}
+#banner .normal-nav li:hover .jiafang{
+	color: #f7a831;
+}
+#banner .normal-nav li:hover .medicine{
+	color: #3bc7b0;
+}
+#banner .normal-nav li:hover .chuju{
+	color: #dd2727;
+}
+#banner .normal-nav li:hover .tushuyinxiang{
+	color: #3bc7b0;
+}
+/* 轮播图样式 */
+#banner .image-center {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+#banner {
+	height: 500px;
+	background: #000;
+}
 /* banner样式-结束 */
+
+/* interact样式-开始 */
+#interact .wrapper {
+	margin-top:30px;
+}
+/* interact的顶部图片样式 */
+#interact .interact-car-top {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+/* interact的导航图片样式 */
+#interact .interact-cars a{
+	margin-right:5px;
+}
+#interact .interact-cars img:hover{
+	opacity: .7;
+}
+/* interact样式-结束 */
+
+/* clothes样式-开始 */
+#clothes {
+	margin-top: 10px;
+	background:rgb(240, 240, 240);
+	overflow: hidden;
+}
+#clothes .clothes-brand {
+	width: 234px;
+	height: 370px;
+	margin-right: 13px;
+	float: left;
+}
+#clothes .clothes-luxury {
+	width: 485px;
+	height: 370px;
+	margin-right: 13px;
+	float: left;
+}
+#clothes .clothes-activity {
+	width: 485px;
+	height: 370px;
+	float: left;
+}
+#clothes .brand-top ,#clothes .luxury-top , #clothes .activity-top {
+	position: relative;
+	background: #ffffff;
+}
+#clothes span {
+	display: inline-block;
+	height: 55px;
+	line-height: 55px;
+}
+#clothes .cn {
+	font-size: 18px;
+    font-weight: 700;
+	color: #333;
+	margin-left: 10px;
+}
+#clothes .en {
+	font-size: 14px;
+    font-weight: 700;
+	color: #333;
+	margin-left: 10px;
+}
+#clothes .icon-rightarrow {
+	font-size: 16px;
+	color: #666;
+	padding-right: 4px;
+	position: absolute;
+	right: 14px;
+	top: 0;
+}
+
+#clothes .brand-bottom img {
+	width: 234px;
+	height: 316px;
+}
+#clothes .luxury-bottom img {
+	width: 485px;
+	height: 316px;
+}
+#clothes .activity-bottom img {
+	width: 485px;
+	height: 316px;
+}
+#clothes .brand-bottom:hover img , #clothes .luxury-bottom:hover img , #clothes .activity-bottom:hover img {
+	opacity: .7;
+}
+/* clothes样式-结束 */
+
+/* brand-list 样式-开始 */
+#brand-list {
+	padding-top: 15px;
+	overflow: hidden;
+	background: rgb(240, 240, 240);
+}
+#brand-list .list {
+	position: relative;
+}
+#brand-list .list-item {
+	width: 1232px;
+	height: 327px;
+}
+#brand-list .list-item li {
+	float: left;
+	width: 122px;
+	height: 108px;
+	background: #ffffff;
+	margin:0 1px 1px 0;
+	position: relative;
+}
+#brand-list .list-item .list-img {
+	width: 122px;
+	height: 108px;
+	position: relative;
+}
+#brand-list .list-item .list-img img {
+	width: 82%;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -50px;
+}
+
+#brand-list .list .list-mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background: #333;
+	transition:all .3s ease-out;
+	opacity: 0;
+}
+#brand-list .list li:hover .list-mask {
+	opacity: .9;
+}
+
+#brand-list .list .list-mask .coupon {
+	color: #fff;
+    text-align: center;
+    line-height: 90px;
+    height: 60px;
+}
+#brand-list .list .list-mask .coupon span {
+	display: block;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+#brand-list .list .list-mask .enter{
+	text-align: center;
+    height: 32px;
+}
+#brand-list .list .list-mask .enter span {
+	display: inline-block;
+	color: #fff;
+	background: #ff0036;
+	width: 63px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 15px;
+	border-radius: 9px;
+}
+
+#brand-list .list .list-change a{
+	width: 122px;
+    height: 108px;
+    display: block;
+    color: #999;
+	background-color: #fff;
+	position: absolute;
+	bottom: 1px;
+	right: 1px;
+	overflow: hidden;
+	transition: all .3s ease-out;
+}
+#brand-list .list .list-change a:hover {
+	color: #fff;
+	background: #ff0036;	
+}
+
+#brand-list .list .list-change .icon-shuaxinzhongjieban {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -30px;
+	margin-left: -20px;
+	font-size: 30px;
+    text-align: center;
+	line-height: 38px;
+}
+#brand-list .list .list-change a:hover .icon-shuaxinzhongjieban {
+	transition: transform .5s ease-out;
+	transform: rotate(360deg);
+}
+
+#brand-list .list .list-change .change{
+	width: 100%;
+	font-size: 14px;
+	display: inline-block;
+	line-height: 136px;
+	text-align: center;
+}
+
+/* brand=list 样式=结束 */
+
+/* commodity样式-开始 */
+#commodity {
+	background: rgb(240, 240, 240)
+}
+#commodity #mail-supermarket .wrapper {
+	padding-top: 20px;
+}
+/* mail-supermarket样式 */
+#commodity #mail-supermarket .supermarket-img img {
+	width: 214px;
+	height: 25px;
+}
+
+#commodity #mail-supermarket .supermarket-con {
+	width: 100%;
+	height: 618px;
+	margin-top:7px;
+	overflow: hidden;
+}
+/* 大图片样式 */
+#commodity #mail-supermarket .supermarket-con .con-big {
+	float: left;
+	position: relative;
+	/* overflow: hidden; */
+}
+#commodity #mail-supermarket .supermarket-con .con-big:hover img ,
+#commodity #mail-supermarket .supermarket-con .con-big:hover .icon-rightarrow{
+	opacity: .7;
+}
+#commodity #mail-supermarket .supermarket-con .con-big img {
+	width: 235px;
+	height: 618px;
+}
+#commodity #mail-supermarket .big-detail {
+	width: 218px;
+	height: 64px;
+	position: absolute;
+	bottom: 100px;
+	z-index: 1;
+}
+#commodity #mail-supermarket .detail-left {
+	float: left;
+	width: 70px;
+	height: 64px;
+	background: rgba(0,0,0,.9);
+	color: #FFF;
+	text-align: center;
+}
+#commodity #mail-supermarket .detail-left span{
+	display: inline-block;
+	line-height: 24px;
+    font-size: 18px;
+	width: 36px;
+	padding: 8px 0;
+}
+#commodity #mail-supermarket .detail-right {
+	float: left;
+	width: 114px;
+	height: 56px;
+	background: rgba(0,0,0,.6);
+	color: #fff;
+	padding-left:14px;
+	padding-top:8px;
+}
+#commodity #mail-supermarket .right-top,#commodity #mail-supermarket .right-bottom {
+	display: inline-block;
+	width: 114px;
+	height: 24px;
+}
+#commodity #mail-supermarket .icon-rightarrow {
+	font-size: 30px;
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+/* 右侧内容品牌 */
+#commodity #mail-supermarket .supermarket-con .con-brand {
+	float: left;
+	width: 995px;
+	height: 618px;
+}
+/* 商品网格列表 */
+#commodity #mail-supermarket .supermarket-con .con-brand .grid {
+	width: 484px;
+    height: 301px;
+	margin-left: 13px;
+	margin-bottom: 15px;
+	background: #fff;
+	float: left;
+}
+#commodity #mail-supermarket .supermarket-con .con-brand .grid .grid-tab {
+	width: 462px;
+	height:282px;
+	margin:10px;
+	box-shadow: 0 2px 8px 0 rgb(0,0,0,.09);
+}
+#commodity #mail-supermarket .supermarket-con .con-brand .grid .tab-head {
+	overflow: hidden;
+    background: #F1F1F1;
+}
+#commodity #mail-supermarket .supermarket-con .con-brand .grid .grid-tab li {
+	float: left;
+	width:191px;
+	height: 57px;
+	padding:0 20px;
+	text-align: center;	
+	
+}
+#commodity #mail-supermarket .supermarket-con .con-brand .grid .grid-tab li:hover {
+	background: #00B262;
+}
+#commodity #mail-supermarket .supermarket-con .con-brand .grid .grid-tab .head-title {
+	margin-top: 16px;
+	font-size: 18px;
+	line-height: 57px;
+	color: #000;
+}
+#commodity #mail-supermarket .supermarket-con .con-brand .grid .grid-tab li:hover .head-title {
+	color: #fff;
+}
+
+#commodity #mail-supermarket .supermarket-con .con-brand .tab-content {
+	position: relative;
+}
+#commodity #mail-supermarket .supermarket-con .con-brand .tab-content .left-detail{
+	position: absolute;
+    top: 85px;
+    height: 87px;
+	width: 291px;
+	background: url("../img/Tmall-detail-bg.png") no-repeat 0 center rgb(0,0,0,0);
+	z-index: 3;
+}
+#commodity #mail-supermarket .detail-top {
+	width: 265px;
+	height: 36px;
+	margin-top: 8px;
+	margin-left: 26px;
+	position: relative;
+}
+#commodity #mail-supermarket .detail-top img {
+	position: absolute;
+	top: 6.5px;
+	/* vertical-align: middle; */
+}
+#commodity #mail-supermarket .detail-top span {
+	display: inline-block;
+	margin-left: 31px;
+    font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	color: #00B262;
+    letter-spacing: 1px;
+}
+#commodity #mail-supermarket .detail-bottom {
+	width: 291px;
+	height: 30px;
+}
+#commodity #mail-supermarket .detail-bottom span {
+	margin-left: 26px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #000;
+}
+
+#commodity #mail-supermarket .supermarket-con .con-brand .tab-content .img-detail {
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+	width:200px;
+	height: 200px;
+}
+
+/* 商品价格列表 */
+#commodity #mail-supermarket .supermarket-con .grid-price {
+	display: inline-block;
+	width: 233px;
+	height: 280px;
+	padding-top: 20px;
+	margin-left:13px;
+	margin-bottom: 15px;
+	text-align: center;
+	border: 1px solid #fff;
+	background: #ffffff;
+	float: left;
+}
+#commodity #mail-supermarket .supermarket-con .grid-price:hover {
+	border: 1px solid #ff0036;
+	opacity: .7;
+}
+#commodity #mail-supermarket .supermarket-con .grid-price .brand-img img {
+	width: 185px;
+	height: 185px;
+}
+#commodity #mail-supermarket .supermarket-con .grid-price .brand-introduce {
+	display: block;
+	width: 135px;
+	height: 40px;
+	font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+	margin: 8px auto;	
+	/* text-overflow: ellipsis;
+    white-space: inherit; */
+}
+#commodity #mail-supermarket .supermarket-con .grid-price .brand-price {
+	display: block;
+	line-height: 18px;
+	font-size: 18px;
+	color: #ff0036;
+	margin:10px auto;
+}
+
+/* mail-guoji样式-开始 */
+#commodity #mail-guoji {
+	width: 100%;
+	height: 665px;
+	margin-top: 20px;
+}
+#commodity #mail-guoji .guoji-img img {
+	width: 214px;
+	height: 25px;
+}
+#commodity #mail-guoji .guoji-brand {
+	width: 100%;
+	height:618px;
+	margin-top: 10px;
+}
+#commodity #mail-guoji .guoji-brand .guoji-brand-left,
+#commodity #mail-guoji .guoji-brand .guoji-brand-right{
+	float: left;
+}
+#commodity #mail-guoji .guoji-brand .con-big {
+	width: 235px;
+	height: 301px;
+	margin-bottom: 15px;
+	position: relative;
+}
+#commodity #mail-guoji .guoji-brand .con-big img {
+	width: 235px;
+	height: 301px;
+}
+#commodity #mail-guoji .con-big:hover img ,
+#commodity #mail-guoji .con-big:hover .icon-rightarrow{
+	opacity: .7;
+}
+#commodity #mail-guoji .big-detail {
+	width: 218px;
+	height: 64px;
+	position: absolute;
+	bottom: 60px;
+	z-index: 1;
+}
+#commodity #mail-guoji .detail-left {
+	float: left;
+	width: 70px;
+	height: 64px;
+	background: rgba(0,0,0,.9);
+	color: #FFF;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#commodity #mail-guoji .detail-left span{
+	display: inline-block;
+	line-height: 24px;
+    font-size: 18px;
+	width: 36px;
+	padding: 8px 0;
+}
+#commodity #mail-guoji .detail-right {
+	float: left;
+	width: 114px;
+	height: 56px;
+	background: rgba(0,0,0,.6);
+	color: #fff;
+	padding-left:14px;
+	padding-top:8px;
+}
+#commodity #mail-guoji .right-top,
+#commodity #mail-guoji .right-bottom {
+	display: inline-block;
+	width: 114px;
+	height: 24px;
+}
+#commodity #mail-guoji .icon-rightarrow {
+	font-size: 30px;
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+/* 右侧商品样式开始 */
+#commodity #mail-guoji .guoji-brand-right {
+	width: 995px;
+	height: 618px;
+}
+#commodity #mail-guoji .brand-alone {
+	position: relative;
+}
+#commodity #mail-guoji .brand-alone .right-title {
+	position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 220px;
+    font-size: 18px;
+    z-index: 1;
+    line-height: 24px;
+	height: 24px;
+	color: #000;
+	text-align: left;
+}
+#commodity #mail-guoji .brand-alone .right-sub-title {
+	position: absolute;
+    top: 49px;
+    left: 25px;
+    width: 220px;
+    font-size: 14px;
+    z-index: 1;
+    line-height: 18px;
+	height: 18px;
+	color: #7A45E5;
+	text-align: left;
+}
+#commodity #mail-guoji .brand-alone .right-alone {
+	width: 170px;
+	height: 170px;
+	margin: 90px 33px 42px 32px;
+}
+/* 右侧商品 a 标签列表 */
+#commodity #mail-guoji  .grid-price {
+	display: inline-block;
+	width: 233px;
+	height: 280px;
+	padding-top: 20px;
+	margin-left:13px;
+	margin-bottom: 15px;
+	text-align: center;
+	overflow: hidden;
+	border: 1px solid #fff;
+	background: #ffffff;
+	float: left;
+}
+#commodity #mail-guoji  .grid-price:hover {
+	border: 1px solid #ff0036;
+	opacity: .7;
+}
+#commodity #mail-guoji .grid-price .brand-img img {
+	width: 185px;
+	height: 185px;
+}
+#commodity #mail-guoji .grid-price .brand-introduce {
+	display: block;
+	width: 135px;
+	height: 40px;
+	font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;	
+}
+#commodity #mail-guoji .grid-price .brand-price {
+	display: block;
+	line-height: 18px;
+	font-size: 18px;
+	color: #ff0036;
+	margin:10px auto;
+}
+/* mail-guoji样式-结束 */
+
+/* mail-brand样式-开始 */
+#commodity #mail-brand img {
+	width: 100%;
+	height: 90px;
+	margin-top: 10px;
+}
+/* mail-brand样式-结束 */
+
+/* mail-fashion样式-开始 */
+#commodity #mail-fashion .fashion {
+	width: 1230px;
+	height: 665px;
+	margin-top: 20px;
+}
+
+#commodity #mail-fashion .fashion-title {
+	width: 100%;
+	height: 37px;
+	display: flex;
+	align-items: center;
+}
+#commodity #mail-fashion .fashion-title .title-icon {
+	width: 5px;
+	height: 18px;
+	background: #000;
+	display: inline-block;
+}
+#commodity #mail-fashion .fashion-title .title-con {
+	display: inline-block;
+	margin: 0px 10px;
+	font-size: 18px;
+	color: #000;
+	line-height: 28px;
+}
+#commodity #mail-fashion .fashion-title .title-con span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 14px;
+}
+/* 大图片样式 */
+#commodity #mail-fashion .fashion-con .con-big {
+	float: left;
+	position: relative;
+	/* overflow: hidden; */
+}
+#commodity #mail-fashion .fashion-con .con-big:hover img ,
+#commodity #mail-fashion .fashion-con .con-big:hover .icon-rightarrow{
+	opacity: .7;
+}
+#commodity #mail-fashion .fashion-con .con-big img {
+	width: 235px;
+	height: 618px;
+}
+#commodity #mail-fashion .big-detail {
+	width: 218px;
+	height: 64px;
+	position: absolute;
+	bottom: 100px;
+	z-index: 1;
+}
+#commodity #mail-fashion .detail-left {
+	float: left;
+	width: 70px;
+	height: 64px;
+	background: rgba(0,0,0,.9);
+	color: #FFF;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#commodity #mail-fashion .detail-left span{
+	display: inline-block;
+	line-height: 24px;
+    font-size: 18px;
+	width: 36px;
+	padding: 8px 0;
+}
+#commodity #mail-fashion .detail-right {
+	float: left;
+	width: 114px;
+	height: 56px;
+	background: rgba(0,0,0,.6);
+	color: #fff;
+	padding-left:14px;
+	padding-top:8px;
+}
+#commodity #mail-fashion .right-top,
+#commodity #mail-supermarket .right-bottom {
+	display: inline-block;
+	width: 114px;
+	height: 24px;
+}
+#commodity #mail-fashion .icon-rightarrow {
+	font-size: 30px;
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+/* 右侧 a 标签列表样式 */
+#commodity #mail-fashion  .grid-price {
+	display: inline-block;
+	width: 233px;
+	height: 280px;
+	padding-top: 20px;
+	margin-left:13px;
+	margin-bottom: 15px;
+	text-align: center;
+	overflow: hidden;
+	border: 1px solid #fff;
+	background: #ffffff;
+	float: left;
+}
+#commodity #mail-fashion  .grid-price:hover {
+	border: 1px solid #ff0036;
+	opacity: .7;
+}
+#commodity #mail-fashion .grid-price .brand-img img {
+	width: 185px;
+	height: 185px;
+}
+#commodity #mail-fashion .grid-price .brand-introduce {
+	display: block;
+	width: 135px;
+	height: 40px;
+	font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;	
+}
+#commodity #mail-fashion .grid-price .brand-price {
+	display: block;
+	line-height: 18px;
+	font-size: 18px;
+	color: #ff0036;
+	margin:10px auto;
+}
+/* mail-fashion样式-结束 */
+/* commodity样式-结束 */
