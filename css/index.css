@@ -568,6 +568,15 @@
 	color: #333;
 	margin-left: 10px;
 }
+#clothes .clothes-luxury .top-info ,
+#clothes .clothes-activity .top-info{
+	font-size: 16px;
+	color: #666;
+	padding-right: 30px;
+	position: absolute;
+	right: 14px;
+	top: 0;
+}
 #clothes .icon-rightarrow {
 	font-size: 16px;
 	color: #666;
@@ -721,7 +730,7 @@
 
 /* commodity样式-开始 */
 #commodity {
-	background: rgb(240, 240, 240)
+	background: rgb(240, 240, 240);
 }
 #commodity #mail-supermarket .wrapper {
 	padding-top: 20px;
@@ -1234,4 +1243,223 @@
 	margin:10px auto;
 }
 /* mail-fashion样式-结束 */
+
+/* mail-like样式-开始 */
+#commodity #mail-like .like-brand {
+	width: 1260px;
+	margin-top: 30px;
+}
+#commodity #mail-like .brand-top {
+	width: 100%;
+	height: 43px;
+	text-align: center;
+	position: relative;
+}
+#commodity #mail-like .brand-top::before {
+	content: "";	
+	width: 30px;
+	height: 1px;
+	background: #979797;
+	position: absolute;
+	top: 12px;
+	left: 540px;
+}
+#commodity #mail-like .brand-top::after {
+	content: "";	
+	width: 30px;
+	height: 1px;
+	background: #979797;
+	position: absolute;
+	top: 12px;	
+	right: 540px;
+}
+#commodity #mail-like .brand-top .icon-aixin {
+	font-size: 20px;
+	margin-right: 4px;
+	color: #ff0036;
+}
+#commodity #mail-like .brand-top .top-info {
+	font-size: 18px;
+	line-height: 20px;
+	color: #666;
+    text-align: center;
+    height: 43px;
+    font-weight: 100;
+}
+#commodity #mail-like .con-line::after {
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 333px;
+
+}
+#commodity #mail-like .line-ware {
+	width: 235px;
+	height: 326px;
+	margin-right: 12px;
+	margin-bottom: 7px;
+	float: left;
+}
+#commodity #mail-like .line-ware a {
+	display: inline-block;
+	margin-right: 7px;
+    margin-bottom: 7px;
+    width: 100%;
+	height: 315px;
+	background: #fff;
+	border: 1px solid #fff ;
+}
+#commodity #mail-like .line-ware a:hover {
+	border: 1px solid #ff0036;
+}
+#commodity #mail-like .line-ware .ware-pic {
+	width: 185px;
+	height: 185px;
+	margin: 20px 25px 0 25px;
+}
+#commodity #mail-like .line-ware .ware-pic img{
+	width: 185px;
+	height: 185px;
+}
+#commodity #mail-like .line-ware a:hover img {
+	opacity: .7;
+}
+#commodity #mail-like .line-ware .ware-info {
+	display: inline-block;
+	width:135px;
+	height:40px;
+	margin:22px 50px 8px 50px;
+	font-size: 14px;
+    line-height: 19px;
+	color: #666;
+	overflow: hidden;
+}
+#commodity #mail-like .line-ware .ware-detail {
+	width: 135px;
+	text-align: center;
+	height: 33px;
+    line-height: 22px;
+	margin: 2px 50px 0 50px;
+	display: inline-block;
+	color: #ff0036;
+	font-size: 18px;
+}
+
+#commodity #mail-like .end {
+	width: 80px;
+	height: 45px;
+	margin:0 auto 10px;
+}
+#commodity #mail-like .end img {
+	width: 80px;
+	height: 45px;
+}
+/* mail-like样式结束 */
 /* commodity样式-结束 */
+
+/* footer样式-开始 */
+#footer {
+	min-height: 558px;
+	border-top: 1px solid #d1d7dc;
+	text-align: center;
+    background: #fff;
+    position: relative;
+}
+/* footer-ensure样式开始 */
+#footer .tmall-ensure {
+	width: 1190px;
+	height:100px;
+	margin: 25px auto;
+	background: url(../img/footer-ensure.jpg) no-repeat ;
+}
+#footer .tmall-ensure a {
+	width: 297px;
+	height: 100px;
+	display: inline-block;
+	float: left;
+}
+
+/* tmall-desc样式开始 */
+#footer .tmall-desc {
+	width: 1190px;
+	height: 190px;
+	padding-top: 22px;
+	border-top:1px solid #ededed;
+	margin: 0 auto;
+	background: url("../img/Tmall-eye.png") no-repeat 45px bottom;
+	background-size: 68px 25px;
+}
+#footer .tmall-desc ul {
+	width: 186px;
+	padding-left: 52px;
+	float: left;
+	text-align: left;
+}
+#footer .tmall-desc ul h3 {
+	width: 186px;
+	height: 30px;
+	color: #646464;
+    font-size: 16px;
+	font-weight: 700;
+	line-height: 30px;
+}
+#footer .tmall-desc ul li {
+	height: 20px;
+}
+#footer .tmall-desc ul a {
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	font-size:12px;
+	color: #8b8b8b;
+	line-height: 20px;
+}
+#footer .tmall-desc .desc-mobile img {
+	width: 105px;
+	height: 105px;
+}
+
+/* Tmall-copyright样式开始 */
+#footer .tmall-copyright {
+	border-top: 2px solid #FF0036;
+    background: #000;
+    text-align: left;
+	min-height: 177px;
+}
+#footer .tmall-copyright p {
+	width: 1190px;
+	padding: 5px 0;
+	margin:0 auto;
+	color: #fff;
+	line-height: 25px;
+	font-size: 12px;
+}
+#footer .tmall-copyright p a {
+	margin-right: 3px;
+    color: #fff;
+}
+#footer .copyright-con {
+	color:#a4a4a4;
+	width: 1190px;
+	height: 150px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+#footer .copyright-con a {
+	margin-right: 65px;
+	color:#a4a4a4 ;
+}
+#footer .copyright-con a img {
+	vertical-align: middle;
+}
+
+#footer .copyright-con p img {
+	height: 30px;
+}
+/* server-num样式开始 */
+#footer .server-num {
+	width: 100%;
+	height: 18px;
+	background: #000;
+}
+/* footer样式-结束 */
