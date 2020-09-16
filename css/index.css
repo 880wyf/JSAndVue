@@ -745,7 +745,7 @@
 	width: 100%;
 	height: 618px;
 	margin-top:7px;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 /* 大图片样式 */
 #commodity #mail-supermarket .supermarket-con .con-big {
