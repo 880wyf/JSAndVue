@@ -494,14 +494,29 @@
 	color: #3bc7b0;
 }
 /* 轮播图样式 */
-#banner .image-center {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
+#banner .mail-wai{
+	width: 1230px;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
 }
+#banner .mail-image{
+	width: 8610px;
+	height: 500px;
+	position: absolute;
+	left: 0;
+}
+#banner .image-center {
+	width: 1230px;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+}
+
 #banner {
 	height: 500px;
 	background: #000;
+	
 }
 /* banner样式-结束 */
 
@@ -840,16 +855,24 @@
 }
 #commodity #mail-supermarket .supermarket-con .con-brand .grid .grid-tab li:hover {
 	background: #00B262;
-}
-#commodity #mail-supermarket .supermarket-con .con-brand .grid .grid-tab .head-title {
-	margin-top: 16px;
-	font-size: 18px;
-	line-height: 57px;
-	color: #000;
-}
-#commodity #mail-supermarket .supermarket-con .con-brand .grid .grid-tab li:hover .head-title {
 	color: #fff;
 }
+.first{
+	background: #00B262;
+	color: #fff;
+}
+.disblock{
+	background: #00B262;
+	color: #fff;
+}
+#commodity #mail-supermarket .supermarket-con .con-brand .grid .grid-tab .head-title {
+
+	display:inline-block;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 57px;
+}
+
 
 #commodity #mail-supermarket .supermarket-con .con-brand .tab-content {
 	position: relative;

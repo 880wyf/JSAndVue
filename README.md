@@ -1,2 +1,1 @@
-# JSAndVue
-**js和vue demo**
+# 仿天猫首页
