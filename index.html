@@ -9,15 +9,19 @@
 			<link rel="stylesheet" href="./css/iconfont.css"><!-- 引入小图标样式 -->
 			<link rel="stylesheet" href="./css/common.css">
 			<link rel="stylesheet" href="./css/index.css">
+			<link rel="stylesheet" href="./css/navigation.css">
 			<!-- script 引入外部js文件 -->
 			<script src="./js/jquery-3.5.0.js"></script>
 			<!-- tab商品切换 -->
 			<script src="./js/tab.js"></script>
 			<!-- swing轮播图效果 -->
 			<script src="./js/swing.js"></script>
+			<!-- navigation导航定位 -->
+			<script src="./js/navigation.js"></script>
 
 	</head>
 	<body>
+		<!-- 头部购物车 -->
 		<div id="header">
 				<div class="wrapper">
 							<p class="login-info">
@@ -230,7 +234,7 @@
 						</ul>
 				</div>           
 		</div>
-    
+    <!-- 头部搜索框 -->
 		<div id="search">			
 			<div class="wrapper">
 				<div class="logo-info">
@@ -239,15 +243,15 @@
 				<div class="search-brace"></div>				
 				<div class="search-mall">
 					<form action="">
-						<label for="search-box">搜索 天猫 商品/品牌/店铺</label>
-						<input type="text" name="search-box" class="search-box">
-						<button class="search-btn">搜索</button>
+						<!-- <label for="search-box">搜索 天猫 商品/品牌/店铺</label> -->
+						<input type="text" name="search-box" class="search-box" placeholder="搜索 天猫 商品/品牌/店铺">
+						<input type="button" class="search-btn" value="搜索" />
 					</form>
 				</div>
 			</div>
 			
 		</div>
-
+		<!-- 横向导航列表 -->
 		<div id="mail-nav">			
 			<div class="wrapper">
 				<div class="mail-list">
@@ -268,7 +272,7 @@
 				</div>
 			</div>			
 		</div>
-
+		<!-- 轮播图广告 -->
 		<div id="banner">
 			<div class="wrapper">
 				<div class="mail-commodity">
@@ -416,7 +420,7 @@
 				
 			</div>
 		</div>
-		
+		<!-- 汽车广告 -->
 		<div id="interact">
 			<div class="wrapper">
 				<div class="interact-car-top">
@@ -441,7 +445,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- 品牌广告 -->
 		<div id="clothes">
 			<div class="wrapper">
 				<div class="clothes-brand">
@@ -490,7 +494,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- 小广告列表 -->
 		<div id="brand-list">
 			<div class="wrapper">
 				<div class="list">
@@ -883,7 +887,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- 详细商品 -->
 		<div id="commodity">
 			<div id="mail-supermarket">
 				<div class="wrapper">
@@ -1913,7 +1917,7 @@
 				</div>
 			</div>
 		</div>	
-		
+		<!-- 底部赞助商 -->
 		<div id="footer">
 			<div class="wrapper">
 				<div class="tmall-ensure">
@@ -2030,6 +2034,29 @@
 			<div class="server-num"></div>
 			
 		</div>
-		
+		<!-- 定位导航竖向条 -->
+		<div id="navigation" >
+			<div class="nav-prompt">
+				导航
+			</div>
+			<div class="nav-info">
+				<a href="#" target="self">天猫超市</a>
+				<a href="#" target="self">天猫国际</a>
+				<a href="#" target="self">美丽人生</a>
+				<a href="#" target="self">潮电酷玩</a>
+				<a href="#" target="self">居家生活</a>
+				<a href="#" target="self">打造爱巢</a>
+				<a href="#" target="self">户外出行</a>
+				<a href="#" target="self">猜你喜欢</a>
+			</div>
+			<div class="retop">
+				<span></span>
+				<p>顶部</p>
+			</div>
+		</div>
+		<!-- 显示隐藏-搜索框 -->
+		<div id="dis-search">
+			
+		</div>
 	</body>
 </html>

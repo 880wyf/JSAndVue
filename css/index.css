@@ -312,7 +312,7 @@
 }
 #search .search-mall {
 	width: 621px;
-	margin-left: 300px;
+	margin-left: 303px;
 	border: 2px solid #ff0036;
 	overflow: hidden;
 	position: relative;
@@ -338,6 +338,8 @@
 	border: none;
 	outline: none;
 	float: left;
+	font-size: 14px;
+    line-height: 26px;
 }
 /* 搜索框按钮样式 */
 #search .search-mall .search-btn {
@@ -532,8 +534,14 @@
 }
 /* interact的导航图片样式 */
 #interact .interact-cars a{
-	margin-right:5px;
+	display: inline-block;
+	width: 238px;
+	height: 269px;	
+	margin-right:4px;
 }
+/* #interact .interact-cars img{
+
+} */
 #interact .interact-cars img:hover{
 	opacity: .7;
 }
@@ -927,7 +935,7 @@
 
 /* 商品价格列表 */
 #commodity #mail-supermarket .supermarket-con .grid-price {
-	display: inline-block;
+	display: block;
 	width: 233px;
 	height: 280px;
 	padding-top: 20px;
@@ -1086,7 +1094,7 @@
 }
 /* 右侧商品 a 标签列表 */
 #commodity #mail-guoji  .grid-price {
-	display: inline-block;
+	display: block;
 	width: 233px;
 	height: 280px;
 	padding-top: 20px;
@@ -1228,7 +1236,7 @@
 }
 /* 右侧 a 标签列表样式 */
 #commodity #mail-fashion  .grid-price {
-	display: inline-block;
+	display: block;
 	width: 233px;
 	height: 280px;
 	padding-top: 20px;
@@ -1398,7 +1406,7 @@
 #footer .tmall-ensure a {
 	width: 297px;
 	height: 100px;
-	display: inline-block;
+	display: block;
 	float: left;
 }
 

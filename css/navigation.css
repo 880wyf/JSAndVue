@@ -1,0 +1,58 @@
+#navigation {
+  width: 0px;
+  height: 0px;
+  float: left;
+  position: fixed;
+  left: 2px;
+  bottom:40px;
+  display: none;
+}
+/* 导航样式 */
+#navigation .nav-prompt{
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #ff0036;
+}
+/* 锚点链接样式 */
+#navigation .nav-info a{
+  display: block;
+  margin-top: 1px;
+  width: 24px;
+  height: 28px;
+  text-align: center;
+  line-height: 12px;
+  padding: 6px 6px 2px 6px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #666666;
+}
+/* 顶部样式 */
+#navigation .retop{
+  margin-top: 1px;
+  width: 36px;
+  height: 26px;
+  padding: 5px 0px 5px 0px;
+  background-color: rgba(59, 59, 59, 0.3);
+}
+#navigation .retop span{
+  display: block;
+  width: 36px;
+  height: 13px;
+  line-height: 13px;
+  text-align: center;
+  font-size: 12px;
+}
+#navigation .retop p{
+  display: block;
+  width: 36px;
+  height: 13px;
+  line-height: 13px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 600;
+}
