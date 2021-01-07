@@ -508,6 +508,9 @@
 	position: absolute;
 	left: 0;
 }
+#banner .mail-image img{
+	width: 1230px;
+}
 #banner .image-center {
 	width: 1230px;
 	float: left;
