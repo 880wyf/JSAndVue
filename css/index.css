@@ -427,8 +427,8 @@
 #banner .normal-nav li a {
 	display: inline-block;
 	height: 31.2px;
-    line-height: 31.2px;
-    color: #fff;
+  line-height: 31.2px;
+   /* color: #fff; */
 	font-size: 14px;
 	font-weight: bold;
 }
@@ -441,60 +441,138 @@
     line-height: 31px;
     font-size: 16px;
 }
-#banner .normal-nav li:hover{
-	background: #ffffff;
-}
 #banner .normal-nav li:hover a span {
 	opacity: 1;
 }
-#banner .normal-nav li:hover .nvzhuang{
+.lis{
+	background: #ffffff;
+}
+.aColor{
+	color: #ffffff;
+}
+.color0{
 	color: #ff0036;
 }
-#banner .normal-nav li:hover .nanzhuang {
+.color1 {
 	color: #427def;
 }
-#banner .normal-nav li:hover .xiezi{
+.color2{
 	color: #6347ed;
 }
-#banner .normal-nav li:hover .meizhuang{
+.color3{
 	color: #e54077;
 }
-#banner .normal-nav li:hover .zuanshi{
+.color4{
 	color: #6347ed;
 }
-#banner .normal-nav li:hover .shouji{
+.color5{
 	color: #427def;
 }
-#banner .normal-nav li:hover .muyingwanju{
+.color6{
 	color: #fa5c5c;
 }
-#banner .normal-nav li:hover .lingshi{
+.color7{
 	color: #f7a831;
 }
-#banner .normal-nav li:hover .f02f{
+.color8{
 	color: #f7a831;
 }
-#banner .normal-nav li:hover .jiadian{
+.color9{
 	color: #427def;
 }
-#banner .normal-nav li:hover .jiancai{
+.color10{
 	color: #dd2727;
 }
-#banner .normal-nav li:hover .cheqiche{
+.color11{
 	color: #427def;
 }
-#banner .normal-nav li:hover .jiafang{
+.color12{
 	color: #f7a831;
 }
-#banner .normal-nav li:hover .medicine{
+.color13{
 	color: #3bc7b0;
 }
-#banner .normal-nav li:hover .chuju{
+.color14{
 	color: #dd2727;
 }
-#banner .normal-nav li:hover .tushuyinxiang{
+.color15{
 	color: #3bc7b0;
 }
+
+/* 侧边导航 */
+#banner .mormal-info{
+	/* width:1px; */
+	height: 500px;
+	/* border:1px solid red; */
+	float: left;
+	position: absolute;
+	left: 200px;
+	top: 36px;
+	clear: both;
+}
+.dis{
+	display: block;
+}
+#banner .set-speech{
+	width: 852px;
+	height: 500px;
+	position: absolute;
+	background-color: #fff;
+	display: none;
+}
+#banner .info-hot {
+	width: 583px;
+	height: 462px;
+	margin: 19px 30px;
+	overflow: hidden;
+  background-color: #fff;
+	float: left;
+}
+#banner .info-sub{
+	width: 189px;
+	height: 480px;
+	padding: 10px;
+	background-color: #FAFAFA;
+	float: left;
+}
+#banner .hot-title{
+	color: #333;
+	float: left;
+	line-height: 22px;
+	/* margin-right: 30px; */
+}
+#banner .hot-title .title-text{
+		display: inline-block;
+		width: 82px;
+		text-align-last: justify;
+		font-size: 14px;
+		line-height: 22px;
+    overflow: hidden;
+		text-align: justify;
+		font-weight: 700;
+}
+#banner .hot-content{
+	color: #999;
+	width: 493px;
+	/* height: 66px; */
+	font-size: 12px;
+	line-height: 22px;
+	margin-left: 100px;
+}
+#banner .hot-content a{
+	display: inline-block;
+	color: #666;
+	margin-left: 13px;
+	line-height: 22px;
+
+}
+#banner .hot-content .bord{
+	width: 493px;
+	height: 10.5px;
+	border-bottom: 1px dashed rgba(0,0,0,.1);
+	margin-bottom: 10.5px;
+}
+
 /* 轮播图样式 */
 #banner .mail-wai{
 	width: 1230px;

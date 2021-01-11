@@ -1,4 +1,4 @@
-$(function () {
+;$(function () {
   var $navigation = $("#navigation")
   // 滚动 显示与隐藏
   $(window).scroll(function(event){
@@ -23,7 +23,7 @@ $(function () {
   var $listA = $(".nav-info a")
   
   $(window).scroll(function(){
-    console.log($("body, html").scrollTop())
+    // console.log($("body, html").scrollTop())
     var $top = $("body, html").scrollTop()
     if($top >= 1650 && $top < 2310){   
       $listA.css("background","#666666")   
@@ -87,7 +87,7 @@ $(function () {
 
   var $disSearch = $("#dis-search")
   $(window).scroll(function () {
-    console.log($("body, html").scrollTop())
+    // console.log($("body, html").scrollTop())
     if($("body, html").scrollTop() >= 800){
       $disSearch.stop().animate({
         height:"50px"

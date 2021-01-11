@@ -1,4 +1,4 @@
-$(function() {
+;$(function() {
   var $timer = null 
   var image = document.querySelector(".mail-image")
   var index = 0
@@ -24,6 +24,8 @@ $(function() {
     }
     
     }
+
+
 
   
 })

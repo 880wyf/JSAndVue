@@ -1,4 +1,4 @@
-$(function() {
+;$(function() {
   var $lis = $("#commodity .supermarket-con .head-title")
   var $tabs = $("#commodity .supermarket-con .tab-content")
   var flag = 0
